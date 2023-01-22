@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getRandomPrompt } from "../utils";
 import { FormField, Loader } from "../components";
+import ReactMarkdown from "react-markdown";
+import { recipeSampleMarkDown } from "../constants";
 
 const CreatePost = () => {
   const navigate = useNavigate();
@@ -113,20 +115,15 @@ const CreatePost = () => {
             handleSurpriseMe={handleSurpriseMe}
           />
 
-          <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rouded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center">
+          <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rouded-lg focus:ring-blue-500 focus:border-blue-500  flex justify-center items-center">
             {form.recipe ? (
-              <div>
-                <p className="text-[#222328] text-[14px] font-medium">
-                  {form.recipe}
-                </p>
+              <div className="flex flex-col gap-5 h-full  p-6 recipe-md">
+                <ReactMarkdown>{form.recipe}</ReactMarkdown>
               </div>
             ) : (
-                <p
-                  className="text-[#666e75] text-[14px] font-medium"
-                >
-                  test
-
-                </p>
+              <div className="flex flex-col gap-5 h-full  p-6 recipe-md">
+                <ReactMarkdown>{recipeSampleMarkDown}</ReactMarkdown>
+              </div>
             )}
 
             {generatingRecipe && (
@@ -143,7 +140,7 @@ const CreatePost = () => {
             onClick={generateRecipe}
             className="text-white bg-green-700 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
-            {generatingRecipe ? "Generating..." : "Generate Image"}
+            {generatingRecipe ? "Generating..." : "Generate Recipe"}
           </button>
         </div>
 

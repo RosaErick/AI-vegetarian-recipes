@@ -11,7 +11,7 @@ const openai = new OpenAIApi(config);
 
 export const generateAnswer = async (prompt) => {
   try {
-    const newPrompt = `generate a vegetarian recipe with ${prompt}, using flexible ingredients and markdown formatting`;
+    const newPrompt = `generate a vegetarian recipe in markdown formatting with ${prompt}, using flexible ingredients`;
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
