@@ -1,0 +1,12 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.recipe-md h1{
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
