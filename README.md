@@ -5,11 +5,12 @@
  This is a fullstack app built with Vite, React, TailwindCSS, Node.js, Express, MongoDB, and OpenAI API. The app is deployed on Netlify and Render.
 
  This app was built for practice and learning purposes. 
+![AI-Vegetarian-Recipe-Generator](https://user-images.githubusercontent.com/49876146/213962759-75773db2-c229-46bb-8762-b23ad94b2341.png)
+![AI-Vegetarian-Recipe-Generator (1)](https://user-images.githubusercontent.com/49876146/213962769-39a27a6e-db3f-43a2-9935-f505cd63fd46.png)
+
 
  
 ## Installation
-
-Use the package manager [npm](https://pip.pypa.io/en/stable/) to install foobar.
 
 in client and server folder:
 ```bash
