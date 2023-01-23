@@ -84,7 +84,7 @@ const CreatePost = () => {
           <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
 
           <p className="mt-2 text-[#666e75 text-[14px] max-w[500px]">
-            Create imaginative recipes by combining ingredients and cooking
+            Create imaginative recipes by combining ingredients
           </p>
         </div>
       </div>
@@ -106,10 +106,10 @@ const CreatePost = () => {
           />
 
           <FormField
-            LabelName="Prompt"
+            LabelName="Ingredients"
             type="text"
             name="prompt"
-            placeholder="Enter an ingredient"
+            placeholder="Enter one or more ingredients... ex:potato, onion, garlic"
             value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe
