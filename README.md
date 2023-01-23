@@ -6,8 +6,7 @@
 
  This app was built for practice and learning purposes. 
 
- You can visit the app [here](https://aivegetarianrecipes.netlify.app/)
-
+ 
 ## Installation
 
 Use the package manager [npm](https://pip.pypa.io/en/stable/) to install foobar.
