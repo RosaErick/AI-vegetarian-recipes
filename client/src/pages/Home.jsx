@@ -21,6 +21,8 @@ const Home = () => {
   const [searchedResults, setSearchedResults] = useState(null);
   const baseURL = import.meta.env.VITE_API_PROD;
 
+  console.log("baseURL", baseURL);
+
   const fetchPosts = async () => {
     setLoading(true);
 
