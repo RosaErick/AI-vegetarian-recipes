@@ -7,6 +7,7 @@ import { recipeSampleMarkDown } from "../constants";
 
 const CreatePost = () => {
   const navigate = useNavigate();
+  const baseURL = import.meta.env.VITE_API_PROD;
 
   const [form, setForm] = useState({
     name: "",
@@ -21,7 +22,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingRecipe(true);
-        const response = await fetch("http://localhost:8080/generate", {
+        const response = await fetch(`${baseURL}/generate`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -49,7 +50,7 @@ const CreatePost = () => {
       setLoading(true);
 
       try {
-        const response = await fetch("http://localhost:8080/recipes", {
+        const response = await fetch(`${baseURL}/recipes`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
