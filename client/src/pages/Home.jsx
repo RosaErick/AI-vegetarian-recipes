@@ -69,11 +69,11 @@ const Home = () => {
     <section className="max-w-7xl mx-auto">
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">
-          The Community Showcase
+          Vegetarian Recipes - Community Showcase
         </h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">
-          Browse through a collection of imaginative recipes generated with Open
-          AI
+          Browse through a collection of recipes generated with Open
+          AI ChatGTP
         </p>
       </div>
 
